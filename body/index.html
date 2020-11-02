@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sneha ka kam</title>
+</head>
+<body>
+    <div id="hero">
+        <div class="navbar">
+            <img src="" class="logo"> 
+            <!-- if you want logo idhar laga dena -->
+            <div class="user">
+                <button type="button">Dashboard</button>
+                <img src="images/me.jpeg"> <!--user ka pic circular pic-->
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="info">
+                <h1>Sneha</h1>
+                <p>Genique Education is an educational organization that is committed to providing the best learning experience of Exams like GATE/ESE/PSU with something different conceptual approaches towards learning. Education is not all about studying and getting good marks but it means to discover new things and increase one's understanding towards their aim that is how exactly one can achieve their goal in an effective manner.  We believe in education for all and we are redefining technical education from the bottom up.</p>
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+    </div>
+    <div class="slider">
+        <img src="images/leftArrow.png" id="prev">  
+        <div class="preview">
+            <img src="images/3.jpg" class="active thumbnail"> 
+            <img src="images/3.jpg" class="thumbnail"> 
+            <img src="images/3.jpg" class="thumbnail"> 
+            <img src="images/3.jpg" class="thumbnail"> 
+            <img src="images/3.jpg" class="thumbnail"> 
+        </div>
+        <img src="images/leftArrow.png" id="next">   
+    </div>
+    
+    <script>
+        var prev = document.getElementById('prev');
+        var next = document.getElementById('next');
+        var thumbnail = document.getElementsByClassName("thumbnail");
+        var hero = document.getElementById('hero');
+
+        var backgroundImg= new Array(
+            "images/3.jpg",
+            "images/3.jpg",
+            "images/3.jpg",
+            "images/3.jpg",
+            "images/3.jpg",
+        
+            // background images
+        );
+        let i=0;
+        next.onclick = function(){
+            if(i<4){    
+            hero.style.backgroundImage = 'url("' + backgroundImg[i+1] +'")';
+            thumbnail[i+1].classList.add("active");
+            thumbnail[i].classList.remove("active");
+            i++;
+            }
+        }
+
+        prev.onclick = function(){
+            if(i>0){    
+            hero.style.backgroundImage = 'url("' + backgroundImg[i-1] +'")';
+            thumbnail[i-1].classList.add("active");
+            thumbnail[i].classList.remove("active");
+            i--;
+            }
+        }
+    </script>
+
+</body>
+</html>
