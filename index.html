@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>RenewHealth</title>
+        <link rel="stylesheet" type="text/css" href="style.css"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+    </head>
+    <body>
+        <!--Navbar and header-->
+        <header class="site-header">
+            <nav>
+                <div class="logo">
+                    <h1>RenewHealth</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="lyns">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var nav = document.getElementById("nav");
+                var sticky = nav.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset >= sticky) {
+                    nav.classList.add("sticky")
+                  } else {
+                    nav.classList.remove("sticky");
+                  }
+                }
+                </script>
+            <section>
+                <div class="leftside">
+                    <img src="images/yogafemale.png">
+                </div>
+                <div class="rightside">
+                    <h1>DIVINE ASANAS</h1>
+                    <p>Yoga brings peace and calmness to mind and body.</p>
+                    <button><a href="#">Goto Dashboard</a></button>
+                </div>
+            </section>
+            
+        </header>
+        <!--Navbar and header completed-->
+
+        <!--Body section started-->
+        <div id="slider">
+            <figure>
+                <img src="images/femaleyoga.jpg">
+                <img src="images/helpingdude.png">
+                <img src="images/iit.png">
+                <img src="images/learningpeeps.png">
+                <img src="images/magicalbites.png">
+            </figure>
+        </div>
+        <!--Body section completed-->
+
+        <!--Footer started-->
+        <!--Footer completed-->
+    </body>
+    <footer>
+    </footer>
+</html>
