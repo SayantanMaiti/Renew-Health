@@ -14,4 +14,6 @@ Home Page(index.html)</br>
 </br>
 Dashboard Page(dashboard.html)</br>
 Create a dashboard page as per your choice but it should look professional.
-
+</br>
+Contributions are welcome!!</br>
+Please Note-Deadline by Tomorrow 5pm
